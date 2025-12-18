@@ -111,29 +111,29 @@
                 // Before November
                 document.body.className = 'too-early';
                 document.getElementById('answer').textContent = 'NO';
-                document.getElementById('subtitle').textContent = 'Way too early! November is too soon for Christmas trees. Come back in December.';
+                document.getElementById('subtitle').textContent = "Way too early! It's not even November yet. Come back in December.";
             } else if (month === 10) {
                 // November - definitely too early
                 document.body.className = 'too-early';
                 document.getElementById('answer').textContent = 'NO';
-                document.getElementById('subtitle').textContent = 'November is too soon! No Christmas trees until December.';
+                document.getElementById('subtitle').textContent = "November is too soon! No Christmas trees until December.";
             } else if (month === 11) {
                 // December - check if it's after Christmas
                 if (day >= 26) {
                     document.body.className = 'after-christmas';
                     document.getElementById('answer').textContent = 'TAKE IT DOWN';
-                    document.getElementById('subtitle').textContent = 'Christmas is over! Time to take down the tree.';
+                    document.getElementById('subtitle').textContent = "Christmas is over! Time to take down the tree.";
                 } else {
                     // December 1-25
                     document.body.className = 'yes';
                     document.getElementById('answer').textContent = 'YES';
-                    document.getElementById('subtitle').textContent = 'It\'s December! Your tree should definitely be up. 🎄';
+                    document.getElementById('subtitle').textContent = "It's December! Your tree should definitely be up. 🎄";
                 }
             } else {
                 // After December (January onwards)
                 document.body.className = 'after-christmas';
                 document.getElementById('answer').textContent = 'NO';
-                document.getElementById('subtitle').textContent = 'Christmas is over! If your tree is still up, take it down!';
+                document.getElementById('subtitle').textContent = "Christmas is over! If your tree is still up, take it down!";
             }
         }
 
